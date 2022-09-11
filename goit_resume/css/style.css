@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+li {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 26.82px;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: #e5e5e5;
+}
+
+section .row {
+    display: flex;
+    gap: 88px;
+    background: #ffffff;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+section .row .sidebar {
+    background: #1e2939;
+    color: #fff;
+    padding: 40px 0;
+}
+section .row .sidebar .sidebar_img img {
+    max-width: 370px;
+}
+
+section .row .sidebar .sidebar_content {
+    padding-left: 40px;
+    margin-top: 50px;
+}
+
+.sidebar_content .sidebar_content_item:not(:last-child) {
+    margin-bottom: 45px;
+}
+
+.sidebar_content_item h3 {
+    margin-bottom: 8px;
+}
+
+.sidebar_content_item .contact p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.sidebar_content_item .contact p a {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    opacity: 0.5;
+    margin-left: 10px;
+}
+
+.sidebar_content_item .contact p a[href^="mailto:"] {
+    text-decoration: underline;
+}
+
+.sidebar_content_item ul li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.sidebar_content_item ul li::marker {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #fb6d3a;
+}
+
+.main_content {
+    padding: 105px 0;
+}
+
+.main_content .about {
+    margin-bottom: 40px;
+}
+
+.main_content .about h2 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 19px;
+}
+
+.main_content .about h1 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 24px;
+}
+
+.main_content .about p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    max-width: 400px;
+}
+
+.main_content .projects {
+    margin-bottom: 50px;
+}
+
+.main_content .projects h3 {
+    margin-bottom: 8px;
+}
+
+.main_content .projects div {
+    display: flex;
+}
+
+.main_content .projects ol li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+
+.main_content .projects ol li::marker {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    margin-left: 13px;
+}
+
+.main_content .projects ol li a {
+    color: #595959;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 325px;
+    margin-left: 10px;
+}
+
+.main_content .projects ol li a::after {
+    border-bottom: 1px dashed #a8a8a8;
+    content: "";
+    flex: 1;
+    height: 18px;
+}
+
+.main_content .projects span::before {
+    font-weight: bold;
+    color: #000;
+    content: "[ ";
+}
+
+.main_content .projects span::after {
+    font-weight: bold;
+    color: #000;
+    content: "] ";
+}
+
+.main_content .experience {
+    margin-bottom: 40px;
+}
+
+.main_content h3 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 12px;
+}
+
+.main_content .experience h4,
+.main_content .education h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 11px;
+}
+
+.main_content .experience h4 .text-orange,
+.main_content .education h4 .text-orange {
+    color: #fb6d3a;
+}
+
+.main_content .experience p,
+.main_content .education p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #a8a8a8;
+    margin-bottom: 8px;
+}
+
+.main_content .experience .vertical_line,
+.main_content .education .vertical_line {
+    position: relative;
+    padding-left: 10px;
+}
+
+.main_content .experience .vertical_line::before,
+.main_content .education .vertical_line::before {
+    content: "";
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 1px;
+    margin: 0 5px;
+}
+
+.main_content .experience ul {
+    max-width: 526px;
+    margin-bottom: 18px;
+}
+
+.main_content .experience ul li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+
+.main_content .experience ul li::marker {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+
+.main_content .education h5 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    section .row {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+    }
+    section .row .sidebar .sidebar_img img {
+        max-width: 100%;
+    }
+    section .row .sidebar .sidebar_content {
+        padding: 0 15px;
+    }
+    .main_content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px 30px;
+    }
+    .main_content .about h1 {
+        font-size: 31px;
+        line-height: 40px;
+    }
+    .main_content .about p {
+        max-width: 100%;
+    }
+    .main_content .projects div {
+        flex-direction: column;
+    }
+    .main_content .projects div li {
+        font-size: 12px;
+    }
+    .main_content .projects div span {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .main_content .projects ol li a::after {
+        border-bottom: none;
+    }
+    /* .main_content .experience .vertical_line::before,
+    .main_content .education .vertical_line::before {
+        top: 0;
+        height: 50%;
+    } */
+    .main_content .projects ol li a {
+        width: 100%;
+    }
+}
